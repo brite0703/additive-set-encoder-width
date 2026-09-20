@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "manuscript": "NEUNET-D-26-03059",
+  "protocol": "anchor_matching_revision",
+  "runtime": {
+    "python_major_minor": [3, 11],
+    "torch": "2.9.0",
+    "numpy": "2.3.5",
+    "require_cuda_for_full_run": true
+  },
+  "seeds": [104729, 130363, 155921, 181081, 205759, 230003, 254959, 279967, 305093, 330287],
+  "domains": ["square", "disk", "annulus"],
+  "cardinality_caps": [2, 3, 4, 5],
+  "width_offsets": [-2, -1, 0, 1],
+  "encoder_families": ["mlp", "theorem_projection"],
+  "anchor": [2.0, 0.0],
+  "annulus_inner_radius": 0.45,
+  "sampling": {
+    "cardinality": "discrete_uniform_on_0_to_n",
+    "square": "coordinatewise_uniform",
+    "disk": "area_uniform",
+    "annulus": "area_uniform"
+  },
+  "splits": {
+    "train": 2048,
+    "validation": 512,
+    "test": 512,
+    "analytic_test": 1024
+  },
+  "training": {
+    "epochs": 20,
+    "batch_size": 128,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "hidden_width": 128,
+    "hidden_depth": 3,
+    "cardinality_loss_weight": 1.0,
+    "theorem_projection_mode": "learned_all_widths",
+    "strict_determinism": true
+  },
+  "diagnostics": {
+    "normalized_recovery_tolerance": 1e-6,
+    "relative_perturbation": 0.001,
+    "perturbations_per_example": 32,
+    "nearest_code_quantile": 0.05,
+    "quantile_method": "linear",
+    "quantization_bits": [4, 6, 8],
+    "standardized_clip": 4.0,
+    "quantization_scale_ddof": 0,
+    "quantization_scale_floor_relative": 1e-6
+  },
+  "reporting": {
+    "primary_slice": {
+      "domain": "disk",
+      "n": 4,
+      "width_offset": 0
+    },
+    "displayed_quantization_bits": [4],
+    "pooled_rule": "equal_weight_domain_cap_within_seed",
+    "interval_method": "two_sided_student_t_across_seeds",
+    "confidence_level": 0.95
+  },
+  "artifacts": {
+    "save_checkpoints": true,
+    "save_per_example_predictions": true
+  }
+}
