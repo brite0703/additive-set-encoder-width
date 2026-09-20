@@ -4,7 +4,7 @@ Manuscript: NEUNET-D-26-03059. This guide accompanies the first revision of the 
 
 The distribution file is `additive_set_encoder_width_reproducibility.zip`. Extract it and open its `additive_set_encoder_width_reproducibility` folder. The paths below also apply inside that folder. Its `README.md` provides the entry points, and `package_manifest.sha256` covers the packaged files. The original result manifest remains inside the result directory.
 
-The complete result directory is `reproducibility/revision_results`, relative to this guide. It contains 960 learned runs, prediction arrays, checkpoints, source snapshots, configuration, aggregates, and `manifest.sha256`. The manuscript's `NN_verified_results.tex` is an exact copy of `reproducibility/revision_results/aggregate/manuscript_macros.tex`. It is a required dependency of the revised manuscript.
+The complete result directory is `reproducibility/revision_results`, relative to this guide. It contains 960 learned runs, prediction arrays, checkpoints, source snapshots, configuration, aggregates, and `manifest.sha256`. The reference file `NN_verified_results.tex` is an exact copy of `reproducibility/revision_results/aggregate/manuscript_macros.tex`. The current manuscript source embeds these complete numerical definitions verbatim and compiles without a separate numerical file. The reference copy remains in the reproducibility distribution for auditing; it is not a manuscript submission dependency.
 
 The obsolete sorted-target, zero-padding protocol and duplicate archives were removed during the 20 September 2026 cleanup. The canonical result directory and its source snapshots are unchanged. Use the source snapshots inside that directory for the reviewer-corrected protocol.
 
