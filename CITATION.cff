@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this release when using these reproducibility materials."
+type: dataset
+title: "Reproducibility materials for Exact Planar Width Thresholds for Continuous Additive Deep Sets"
+authors:
+  - family-names: Huang
+    given-names: Jih-Jeng
+    orcid: "https://orcid.org/0000-0002-7965-7165"
+  - family-names: Chen
+    given-names: Chin-Yi
+date-released: 2026-09-20
+version: final-revision
+url: "https://github.com/brite0703/additive-set-encoder-width/releases/tag/final-revision"
+repository-code: "https://github.com/brite0703/additive-set-encoder-width"
