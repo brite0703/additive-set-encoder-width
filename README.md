@@ -4,7 +4,7 @@ Reproducibility materials for the manuscript by Jih-Jeng Huang and Chin-Yi Chen 
 
 ## Complete package
 
-Download **`additive_set_encoder_width_reproducibility.zip`** from the [final revision release](https://github.com/brite0703/additive-set-encoder-width/releases/tag/final-revision). This is the complete package, including the code, configuration, all 960 learned runs, checkpoints, per-example predictions, constructive decoder checks, aggregate tables, environment records, and reproduction instructions.
+Download **`additive_set_encoder_width_reproducibility.zip`** from the [first revision release](https://github.com/brite0703/additive-set-encoder-width/releases/tag/first-revision). This is the complete package, including the code, configuration, all 960 learned runs, checkpoints, per-example predictions, constructive decoder checks, aggregate tables, environment records, and reproduction instructions.
 
 The ZIP is 243,872,494 bytes. Its SHA-256 checksum is:
 
@@ -33,4 +33,4 @@ The recorded training environment was Python 3.11.9, NumPy 2.3.5, PyTorch 2.9.0+
 
 ## Citation
 
-Huang, J.-J., and Chen, C.-Y. (2026). *Reproducibility materials for Exact Planar Width Thresholds for Continuous Additive Deep Sets* [Data set and software]. GitHub, final revision release. https://github.com/brite0703/additive-set-encoder-width/releases/tag/final-revision
+Huang, J.-J., and Chen, C.-Y. (2026). *Reproducibility materials for Exact Planar Width Thresholds for Continuous Additive Deep Sets* [Data set and software]. GitHub, first revision release. https://github.com/brite0703/additive-set-encoder-width/releases/tag/first-revision

@@ -1,10 +1,10 @@
 # Reproducing the revised Neural Networks results
 
-Manuscript: NEUNET-D-26-03059. This guide accompanies the final manuscript and response. The verified numerical results and their immutable source snapshots are unchanged.
+Manuscript: NEUNET-D-26-03059. This guide accompanies the first revision of the manuscript and its response to reviewers. The verified numerical results and their immutable source snapshots are unchanged.
 
 The distribution file is `additive_set_encoder_width_reproducibility.zip`. Extract it and open its `additive_set_encoder_width_reproducibility` folder. The paths below also apply inside that folder. Its `README.md` provides the entry points, and `package_manifest.sha256` covers the packaged files. The original result manifest remains inside the result directory.
 
-The complete result directory is `reproducibility/revision_results`, relative to this guide. It contains 960 learned runs, prediction arrays, checkpoints, source snapshots, configuration, aggregates, and `manifest.sha256`. The manuscript's `NN_verified_results.tex` is an exact copy of `reproducibility/revision_results/aggregate/manuscript_macros.tex`. It is a required dependency of the final manuscript.
+The complete result directory is `reproducibility/revision_results`, relative to this guide. It contains 960 learned runs, prediction arrays, checkpoints, source snapshots, configuration, aggregates, and `manifest.sha256`. The manuscript's `NN_verified_results.tex` is an exact copy of `reproducibility/revision_results/aggregate/manuscript_macros.tex`. It is a required dependency of the revised manuscript.
 
 The obsolete sorted-target, zero-padding protocol and duplicate archives were removed during the 20 September 2026 cleanup. The canonical result directory and its source snapshots are unchanged. Use the source snapshots inside that directory for the reviewer-corrected protocol.
 
